@@ -3,16 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter,Switch,Link,Route} from 'react-router-dom';
 import National from './Components/National';
 import InterNational from './Components/InterNational'
+import Header from './Components/Header'
 
 class App extends Component {
-  constructor(){
-    super();
-
-  }
+  
   render() {
     return (
       <div className = 'container-fluid'>
         <BrowserRouter>
+          <Header/>
           <Switch>
             <Route exact path='/'>
               <National/>
